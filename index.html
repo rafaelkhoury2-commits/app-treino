@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f1115">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Treino">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <title>Treino</title>
+</head>
+<body>
+  <header class="top">
+    <h1 id="title">Treinar</h1>
+    <button class="top-btn" data-action="tab" data-tab="backup">Backup</button>
+  </header>
+
+  <!-- O conteúdo de cada tela é montado pelo app.js aqui dentro -->
+  <main id="view"></main>
+
+  <nav class="tabs">
+    <button data-action="tab" data-tab="treinar">
+      <svg viewBox="0 0 24 24"><path d="M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12"/></svg>Treinar
+    </button>
+    <button data-action="tab" data-tab="historico">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Histórico
+    </button>
+    <button data-action="tab" data-tab="progresso">
+      <svg viewBox="0 0 24 24"><path d="M3 20h18M5 16l5-5 4 3 6-7"/></svg>Progresso
+    </button>
+    <button data-action="tab" data-tab="fichas">
+      <svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg>Fichas
+    </button>
+  </nav>
+
+  <div id="toast" role="status"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
